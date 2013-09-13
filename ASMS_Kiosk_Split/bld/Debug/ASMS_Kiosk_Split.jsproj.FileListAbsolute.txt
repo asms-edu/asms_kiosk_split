@@ -1,0 +1,13 @@
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\resources.pri
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\AppxManifest.xml
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\ASMS_Kiosk_Split.build.appxrecipe
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\priconfig.xml
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\layout.resfiles
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\resources.resfiles
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\pri.resfiles
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\LanguageQualifiers.txt
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\ProjectArchitectures.txt
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\priconfig.xml.intermediate
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\layout.resfiles.intermediate
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\resources.resfiles.intermediate
+C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bld\Debug\pri.resfiles.intermediate

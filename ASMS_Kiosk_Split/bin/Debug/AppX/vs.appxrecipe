@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ASMS01162</Machine>
+    <WindowsUser>hayd0032</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>907C71A21C474228B7B74720409CC4ABB3A29B024EB225133A93D6196600B4E7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a2330538-929b-4523-9f31-288a90633369_1.0.0.0_neutral__haphvvrdx9kqe</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a2330538-929b-4523-9f31-288a90633369_haphvvrdx9kqe!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a2330538-929b-4523-9f31-288a90633369</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=hayd0032</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-13T00:25:12.110</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-09-10T01:03:50.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\items\items.css">
+      <PackagePath>pages\items\items.css</PackagePath>
+      <Modified>2013-09-12T00:09:27.992</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\itemDetail\itemDetail.css">
+      <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
+      <Modified>2013-09-12T01:03:48.907</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.css">
+      <PackagePath>pages\split\split.css</PackagePath>
+      <Modified>2013-09-13T01:52:55.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+      <Modified>2013-09-13T01:14:53.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-09-13T01:03:45.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-09-09T22:49:57.371</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\items\items.js">
+      <PackagePath>pages\items\items.js</PackagePath>
+      <Modified>2013-09-13T00:58:39.174</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\itemDetail\itemDetail.js">
+      <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
+      <Modified>2013-09-13T00:58:07.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.js">
+      <PackagePath>pages\split\split.js</PackagePath>
+      <Modified>2013-09-13T01:00:08.131</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\items\items.html">
+      <PackagePath>pages\items\items.html</PackagePath>
+      <Modified>2013-09-13T01:10:25.936</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\itemDetail\itemDetail.html">
+      <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
+      <Modified>2013-09-13T01:17:25.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.html">
+      <PackagePath>pages\split\split.html</PackagePath>
+      <Modified>2013-09-13T01:27:28.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-09-12T01:04:38.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-09-13T00:25:11.941</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20602</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
