@@ -6,26 +6,14 @@
     var blogs = [
         {
             key: "asmsBlog",
-            url: "http://blogs.windows.com/windows/b/windowssecurity/atom.aspx",
-            title: "tbd", updated: "tbd",
+            url: "http://asms.sa.edu.au/feed/",
+            title: "Latest ASMS News", updated: "tbd",
             acquireSyndication: acquireSyndication, dataPromise: null
         },
         {
-            key: "blog4",
-            url: 'http://blogs.windows.com/windows/b/business/atom.aspx',
-            title: 'tbd', updated: 'tbd',
-            acquireSyndication: acquireSyndication, dataPromise: null
-        },
-        {
-            key: "blog5",
-            url: 'http://blogs.windows.com/windows/b/bloggingwindows/atom.aspx',
-            title: 'tbd', updated: 'tbd',
-            acquireSyndication: acquireSyndication, dataPromise: null
-        },
-        {
-            key: "blog6",
-            url: 'http://blogs.windows.com/windows/b/windowssecurity/atom.aspx',
-            title: 'tbd', updated: 'tbd',
+            key: "asmsEvents",
+            url: 'http://asms.sa.edu.au/events/event/feed/',
+            title: 'Upcoming ASMS Events', updated: 'tbd',
             acquireSyndication: acquireSyndication, dataPromise: null
         },
     ];
@@ -68,14 +56,14 @@
 
                     if (articleSyndication) {
                         //get blog title
-                        feed.title = articleSyndication.querySelector("feed > title").textContent;
-
+                        //feed.title = articleSyndication.querySelector("channel > title").textContent;
+                        
                         // Use the date of the latest post as the last updated date
-                        var published = articleSyndication.querySelector("feed > entry > published").textContent;
-
+                        var published = articleSyndication.querySelector("channel > lastBuildDate").textContent;
+                        
                         // convert date for display
                         var date = new Date(published);
-                        console.log(published, date);
+                        
                         var dateFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("year month day");
                         var blogDate = dateFmt.format(date);
                         feed.updated = "Last updated " + blogDate;
@@ -105,39 +93,41 @@
 
     function getItemsFromXml(articleSyndication, bPosts, feed) {
         //get info for each blog
-        var posts = articleSyndication.querySelectorAll("entry");
+        var posts = articleSyndication.querySelectorAll("item");
         //process each blog post
         for (var postIndex = 0; postIndex < posts.length; postIndex++) {
             var post = posts[postIndex];
 
             //get the title, author and date published
             var postTitle = post.querySelector("title").textContent;
-            var postAuthor = post.querySelector("author").textContent;
-            var postPublished = post.querySelector("published").textContent;
+            var postAuthor = post.querySelector("creator").textContent;
+            var postPublished = post.querySelector("pubDate").textContent;
 
             //convert date for display
-            //var postDate = new Date(postPublished);
-            //var monthFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("month.abbreviated");
-            //var dayFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("day");
-            //var yearFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("year.full");
-            //var blogPostMonth = monthFmt.format(postDate);
-            //var blogPostDay = dayFmt.format(postDate);
-            //var blogPostYear = yearFmt.format(postDate);
-            //var blogPostDate = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter(postDate);
+            var postDate = new Date(postPublished);
+            var monthFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("month.abbreviated");
+            var dayFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("day");
+            var yearFmt = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("year.full");
+            var blogPostMonth = monthFmt.format(postDate);
+            var blogPostDay = dayFmt.format(postDate);
+            var blogPostYear = yearFmt.format(postDate);
+            var blogPostDate = blogPostDay + " " + blogPostMonth + " " + blogPostYear;
 
             //process content so it displays nicely
-            var staticContent = toStaticHTML(post.querySelector("content").textContent);
-
+            var staticContent = toStaticHTML(post.querySelector("encoded").textContent);
+            //console.log(staticContent);
+            //if no image give placeholder
+            if (blogPostImage === undefined) {
+                var blogPostImage = "http://www.placehold.it/150x150";
+            }
             // Store post info we care about in the array
             bPosts.push({
                 group: feed,
                 key: feed.title,
                 title: postTitle,
                 author: postAuthor,
-                //month: blogPostMonth.toUpperCase(),
-                //day: blogPostDay,
-                //year: blogPostYear,
-                date: "18-07-1992",
+                date: blogPostDate,
+                backgroundImage: blogPostImage,
                 content: staticContent
             });
         }

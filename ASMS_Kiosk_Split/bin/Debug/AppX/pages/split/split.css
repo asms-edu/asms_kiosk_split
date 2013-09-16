@@ -7,12 +7,12 @@
 
     .splitpage header[role=banner] {
         -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 4;
     }
 
     .splitpage header[role=banner] .pagetitle {
-        overflow: hidden;
-        width: calc(100% - 20px);
+        overflow: visible;
+        width: 100%;
     }
 
     .splitpage .itemlistsection {
@@ -107,13 +107,13 @@
         .splitpage .articlesection header {
             -ms-grid-columns: 180px 20px 1fr;
             -ms-grid-rows: 180px;
-            display: -ms-grid;
             margin-bottom: 5px;
-            margin-top: 60px;
+            margin-top: 20px;
         }
 
             .splitpage .articlesection header .text {
-                -ms-grid-column: 3;
+                text-align: left;
+                -ms-grid-column: 4;
             }
 
                 .splitpage .articlesection header .text .article-subtitle {

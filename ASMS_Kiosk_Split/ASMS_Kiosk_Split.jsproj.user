@@ -4,4 +4,8 @@
     <ReferenceCachePath>C:\Users\hayd0032\AppData\Local\Temp\ASMS_Kiosk_Split_refcache</ReferenceCachePath>
     <AutoRefresh>true</AutoRefresh>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
+    <MachineName>ASMS01388</MachineName>
+  </PropertyGroup>
 </Project>
