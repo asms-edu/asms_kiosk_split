@@ -54,6 +54,9 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="css\default.css" />
+    <Content Include="images\firstmap.png" />
+    <Content Include="images\groundmap.png" />
+    <Content Include="images\sturtmap.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />

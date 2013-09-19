@@ -16,13 +16,18 @@
             title: 'Upcoming ASMS Events', updated: 'tbd',
             acquireSyndication: acquireSyndication, dataPromise: null
         },
+        {
+            key: "thinlyCut",
+            url: "http://www.thinlycut.nickphayden.com/feed/",
+            title: "Thinlycut.me", updated: 'tbd',
+            acquireSyndication: acquireSyndication, dataPromise: null
+        }
     ];
 
     // Create data binding for our ListView
     var blogPosts = new WinJS.Binding.List();
 
     // Process the blogs feed
-
     function getFeeds() {
         // create object for each feed in blogs array
         // get the content for each feed
@@ -69,7 +74,7 @@
                         feed.updated = "Last updated " + blogDate;
 
                         //get the blog posts
-                        getItemsFromXml(articleSyndication, blogPosts, feed);
+                        getItemsFromXml(articleSyndication, blogPosts, feed); //this is the return of the function - look here!
                     } else {
                         //return error from loading blogs
                         feed.title = "Error loading blog";
@@ -90,7 +95,7 @@
         });
         return blogPosts;
     }
-
+    //this function is called by getBlogPosts() - don't look here
     function getItemsFromXml(articleSyndication, bPosts, feed) {
         //get info for each blog
         var posts = articleSyndication.querySelectorAll("item");
@@ -115,7 +120,7 @@
 
             //process content so it displays nicely
             var staticContent = toStaticHTML(post.querySelector("encoded").textContent);
-            //console.log(staticContent);
+
             //if no image give placeholder
             if (blogPostImage === undefined) {
                 var blogPostImage = "http://www.placehold.it/150x150";
@@ -134,6 +139,15 @@
     }
 
     var list = getBlogPosts();
+    var staticContentList = new WinJS.Binding.List;
+    // Uses the generateStaticContent for item content
+    generateStaticContent().forEach(function (item) {
+        list.push(item);
+    });
+    // Uses the generateGalleryData for item content
+    generateGalleryData().forEach(function (item) {
+        list.push(item);
+    });
     var groupedItems = list.createGrouped(
         function groupKeySelector(item) { return item.group.key; },
         function groupDataSelector(item) { return item.group; }
@@ -179,4 +193,78 @@
             }
         }
     }
+
+    function generateStaticContent() {
+        var thumbnailImage = "http://placehold.it/150x150";
+        var staticGroups = [
+            { 
+                key: "maps", 
+                title: "Maps of the ASMS buildings",  
+                updated: "Last updated: 18 September 2013"
+            },
+            {
+                key: "galleries",
+                title: "Photos from the ASMS",
+                updated: "Last updated: 18 September 2013"
+            },
+        ];
+        var staticItems = [
+            {
+                group: staticGroups[0],
+                title: "ASMS Ground Floor",
+                author: "An annotated map of the ASMS ground floor",
+                date: "18 Sep 2013",
+                content: "<img src='/images/groundmap.png' />",
+                backgroundImage: thumbnailImage
+            },
+            {
+                group: staticGroups[0],
+                title: "ASMS First Floor",
+                author: "An annotated map of the ASMS first floor",
+                date: "18 Sep 2013",
+                content: "<img src='/images/firstmap.png' />",
+                backgroundImage: thumbnailImage
+            },
+            {
+                group: staticGroups[0],
+                title: "Sturt Buildings",
+                author: "A map of the Sturt buildings",
+                date: "18 Sep 2013",
+                content: "<img src='/images/sturtmap.png' />",
+                backgroundImage: thumbnailImage
+            },
+        ];
+
+        return staticItems;
+    }
+
+    function generateGalleryData() {
+        var thumbnailImage = "http://placehold.it/150x150";
+        var galleryGroups = [
+            {
+                key: "photoGalleries",
+                title: "Photo Galleries",
+                updated: "Last updated: 19 September 2013"
+            }
+        ];
+
+        var galleryItems = [
+            {
+                group: galleryGroups[0],
+                title: "Formal 2013",
+                author: "Photos from our formal for 2013",
+                date: "18 Sep 2013",
+                content: "dadawd",
+                backgroundImage: thumbnailImage
+            }
+        ];
+        return galleryItems;
+    }
 })();
+/*group: feed,
+key: feed.title,
+title: postTitle,
+author: postAuthor,
+date: blogPostDate,
+backgroundImage: blogPostImage,
+content: staticContent*/

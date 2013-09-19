@@ -1,9 +1,12 @@
 css\default.css
 default.html
+images\firstmap.png
+images\groundmap.png
 images\logo.png
 images\smalllogo.png
 images\splashscreen.png
 images\storelogo.png
+images\sturtmap.png
 js\data.js
 js\default.js
 js\navigator.js

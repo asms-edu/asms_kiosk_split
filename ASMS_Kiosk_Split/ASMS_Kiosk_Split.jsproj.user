@@ -5,7 +5,7 @@
     <AutoRefresh>true</AutoRefresh>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor>AppHostRemoteDebugger</DebuggerFlavor>
     <MachineName>ASMS01388</MachineName>
   </PropertyGroup>
 </Project>

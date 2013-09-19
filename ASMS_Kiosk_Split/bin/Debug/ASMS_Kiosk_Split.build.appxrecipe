@@ -25,6 +25,15 @@
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\firstmap.png">
+      <PackagePath>images\firstmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\groundmap.png">
+      <PackagePath>images\groundmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\sturtmap.png">
+      <PackagePath>images\sturtmap.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

@@ -19,7 +19,7 @@
             // Display the appbar but hide the Full View button
             var appbar = document.getElementById('appbar');
             var appbarCtrl = appbar.winControl;
-            appbarCtrl.hideCommands(["view"], false);
+            //appbarCtrl.hideCommands(["view"], false);            
         },
 
         // This function updates the page layout in response to viewState changes.
