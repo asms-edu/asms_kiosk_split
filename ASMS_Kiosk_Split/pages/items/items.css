@@ -52,7 +52,6 @@
                 -ms-grid-row: 2;
                 width: 220px;
             }
-
 @media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
     .itemspage .itemslist .item .item-overlay {
         background: rgba(0,0,0,0.65);

@@ -8,7 +8,7 @@
             key: "asmsBlog",
             url: "http://asms.sa.edu.au/feed/",
             title: "Latest ASMS News", updated: "tbd",
-            acquireSyndication: acquireSyndication, dataPromise: null
+            acquireSyndication: acquireSyndication, dataPromise: null,
         },
         {
             key: "asmsEvents",
@@ -17,9 +17,9 @@
             acquireSyndication: acquireSyndication, dataPromise: null
         },
         {
-            key: "thinlyCut",
-            url: "http://www.thinlycut.nickphayden.com/feed/",
-            title: "Thinlycut.me", updated: 'tbd',
+            key: "asmsPD",
+            url: "http://online.asms.sa.edu.au/feed/",
+            title: "ASMS Professional Development Blog", updated: 'tbd',
             acquireSyndication: acquireSyndication, dataPromise: null
         }
     ];
@@ -53,7 +53,7 @@
     //this function gets the blog posts but because its in XML we need to get the text from it so we use the getItemsFromXml function.
     function getBlogPosts() {
         // walk the results to retrieve blog posts
-        getFeeds().then(function () {
+        getFeeds().then(function() {
             //process each blog
             blogs.forEach(function (feed) {
                 feed.dataPromise.then(function (articlesResponse) {
@@ -144,10 +144,10 @@
     generateStaticContent().forEach(function (item) {
         list.push(item);
     });
-    // Uses the generateGalleryData for item content
-    generateGalleryData().forEach(function (item) {
+    // Uses the generateGalleryData for item content commented out for 1.0 release
+    /*generateGalleryData().forEach(function (item) {
         list.push(item);
-    });
+    });*/
     var groupedItems = list.createGrouped(
         function groupKeySelector(item) { return item.group.key; },
         function groupDataSelector(item) { return item.group; }
@@ -200,11 +200,12 @@
             { 
                 key: "maps", 
                 title: "Maps of the ASMS buildings",  
-                updated: "Last updated: 18 September 2013"
+                updated: "Last updated: 18 September 2013",
+                backgroundImage: "http://placehold.it/500x500",
             },
             {
-                key: "galleries",
-                title: "Photos from the ASMS",
+                key: "webLinks",
+                title: "Links for the ASMS",
                 updated: "Last updated: 18 September 2013"
             },
         ];
@@ -233,12 +234,37 @@
                 content: "<img src='/images/sturtmap.png' />",
                 backgroundImage: thumbnailImage
             },
+            {
+                group: staticGroups[1],
+                title: "ASMS Public Website",
+                author: "Australian Science and Mathematics School",
+                date: "18 Sep 2013",
+                content: "<a href='http://www.asms.sa.edu.au'>Follow this link to the public website</a>",
+                backgroundImage: thumbnailImage
+            },
+            {
+                group: staticGroups[1],
+                title: "ASMS Portal",
+                author: "Australian Science and Mathematics School",
+                date: "18 Sep 2013",
+                content: "<a href='http://portal.asms.sa.edu.au'>Follow this link to the Portal</a>",
+                backgroundImage: thumbnailImage
+            },
+            {
+                group: staticGroups[1],
+                title: "Timetabler",
+                author: "Access your timetable",
+                date: "18 Sep 2013",
+                content: "<a href='http://portal.asms.sa.edu.au/timetabler'>Follow this link to your timetable</a>",
+                backgroundImage: thumbnailImage
+            },
         ];
 
         return staticItems;
     }
 
-    function generateGalleryData() {
+    function generateGalleryData(pathList, pathArray) {
+        var galleryItems = [];
         var thumbnailImage = "http://placehold.it/150x150";
         var galleryGroups = [
             {
@@ -247,24 +273,45 @@
                 updated: "Last updated: 19 September 2013"
             }
         ];
-
-        var galleryItems = [
-            {
+        if (pathArray !== undefined && pathArray.length > 0) {
+            pathArray.forEach(function (item) {
+                galleryItems.push({
+                    group: galleryGroups[0],
+                    title: item.name,
+                    author: "nerd",
+                    date: "datedate",
+                    content: "<img src='" + "item.path" + "' />",
+                    backgroundImage: thumbnailImage
+                });
+            })
+        } else {
+            galleryItems.push({
                 group: galleryGroups[0],
-                title: "Formal 2013",
-                author: "Photos from our formal for 2013",
-                date: "18 Sep 2013",
-                content: "dadawd",
+                title: "No galleries available",
+                author: "No data",
+                date: "No data",
+                content: "No data available",
                 backgroundImage: thumbnailImage
-            }
-        ];
+            });
+        }
         return galleryItems;
     }
+    
+    function getPictureItems() {
+        var pathArray = [];
+        var picturesLibrary = Windows.Storage.KnownFolders.picturesLibrary;
+        //this function is named after a person on Freenode in #Startups that helped me solve the problem of async not creating the variables when I needed them
+        var ffWacom = function (items) {
+            items.forEach(function (item) {
+                pathArray.push({
+                    name: item.name,
+                    path: item.path
+                });
+            });
+            var pathList = new WinJS.Binding.List(pathArray);
+            generateGalleryData(pathList, pathArray);
+        };
+        picturesLibrary.getItemsAsync().then(ffWacom);
+    }
+    getPictureItems();
 })();
-/*group: feed,
-key: feed.title,
-title: postTitle,
-author: postAuthor,
-date: blogPostDate,
-backgroundImage: blogPostImage,
-content: staticContent*/
