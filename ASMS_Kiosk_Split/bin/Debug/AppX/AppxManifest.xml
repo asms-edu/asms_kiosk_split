@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="a2330538-929b-4523-9f31-288a90633369" Version="1.0.0.0" Publisher="CN=hayd0032" ProcessorArchitecture="neutral" />
+  <Identity Name="a2330538-929b-4523-9f31-288a90633369" Version="0.5.0.1" Publisher="CN=hayd0032" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>ASMS_Kiosk_Split</DisplayName>
     <PublisherDisplayName>hayd0032</PublisherDisplayName>

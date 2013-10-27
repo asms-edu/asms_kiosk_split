@@ -1,7 +1,15 @@
 css\default.css
 default.html
+images\asms-logo.png
+images\asms-logo-large.png
 images\firstmap.png
 images\groundmap.png
+images\illustration\chemcity.tif
+images\illustration\diver.tif
+images\illustration\robotics.tif
+images\illustration\solder.tif
+images\illustration\spacewoman.tif
+images\illustration\teacherstudent.tif
 images\logo.png
 images\smalllogo.png
 images\splashscreen.png

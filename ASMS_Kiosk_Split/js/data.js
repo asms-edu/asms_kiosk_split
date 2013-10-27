@@ -9,18 +9,21 @@
             url: "http://asms.sa.edu.au/feed/",
             title: "Latest ASMS News", updated: "tbd",
             acquireSyndication: acquireSyndication, dataPromise: null,
+            backgroundImage: "/images/illustration/spacewoman.tif"
         },
         {
             key: "asmsEvents",
             url: 'http://asms.sa.edu.au/events/event/feed/',
             title: 'Upcoming ASMS Events', updated: 'tbd',
-            acquireSyndication: acquireSyndication, dataPromise: null
+            acquireSyndication: acquireSyndication, dataPromise: null,
+            backgroundImage: "/images/illustration/diver.tif"
         },
         {
             key: "asmsPD",
             url: "http://online.asms.sa.edu.au/feed/",
-            title: "ASMS Professional Development Blog", updated: 'tbd',
-            acquireSyndication: acquireSyndication, dataPromise: null
+            title: "ASMS Professional Learning Blog", updated: 'tbd',
+            acquireSyndication: acquireSyndication, dataPromise: null,
+            backgroundImage: "/images/illustration/solder.tif"
         }
     ];
 
@@ -117,14 +120,20 @@
             var blogPostDay = dayFmt.format(postDate);
             var blogPostYear = yearFmt.format(postDate);
             var blogPostDate = blogPostDay + " " + blogPostMonth + " " + blogPostYear;
-
+            var blogPostImage = null; //post.querySelector("description").querySelector("img")
             //process content so it displays nicely
             var staticContent = toStaticHTML(post.querySelector("encoded").textContent);
-
+            //console.log(post.querySelector("description").query("attachment-thumbnail", "img"));
             //if no image give placeholder
-            if (blogPostImage === undefined) {
-                var blogPostImage = "http://www.placehold.it/150x150";
+            if (blogPostImage === undefined || blogPostImage === null) {
+                var blogPostImage = "/images/asms-logo.png";
             }
+
+            var desc = post.querySelector("description");
+            var staticDesc = toStaticHTML(post.querySelector("description").textContent);
+            var re = /<img/;
+            var result = re.exec(staticDesc);
+            console.log(document.getElementsByTagName("img")[0].getAttribute("src"));
             // Store post info we care about in the array
             bPosts.push({
                 group: feed,
@@ -201,12 +210,13 @@
                 key: "maps", 
                 title: "Maps of the ASMS buildings",  
                 updated: "Last updated: 18 September 2013",
-                backgroundImage: "http://placehold.it/500x500",
+                backgroundImage: "/images/illustration/chemcity.tif",
             },
             {
                 key: "webLinks",
                 title: "Links for the ASMS",
-                updated: "Last updated: 18 September 2013"
+                updated: "Last updated: 18 September 2013",
+                backgroundImage: "/images/illustration/robotics.tif"
             },
         ];
         var staticItems = [

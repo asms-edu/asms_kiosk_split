@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="a2330538-929b-4523-9f31-288a90633369" Version="1.0.0.0" Publisher="CN=hayd0032" />
+  <Identity Name="a2330538-929b-4523-9f31-288a90633369" Version="0.5.0.1" Publisher="CN=hayd0032" />
   <Properties>
     <DisplayName>ASMS_Kiosk_Split</DisplayName>
     <PublisherDisplayName>hayd0032</PublisherDisplayName>

@@ -55,8 +55,16 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="css\default.css" />
+    <Content Include="images\asms-logo-large.png" />
     <Content Include="images\firstmap.png" />
     <Content Include="images\groundmap.png" />
+    <Content Include="images\asms-logo.png" />
+    <Content Include="images\illustration\solder.tif" />
+    <Content Include="images\illustration\teacherstudent.tif" />
+    <Content Include="images\illustration\chemcity.tif" />
+    <Content Include="images\illustration\diver.tif" />
+    <Content Include="images\illustration\robotics.tif" />
+    <Content Include="images\illustration\spacewoman.tif" />
     <Content Include="images\sturtmap.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />

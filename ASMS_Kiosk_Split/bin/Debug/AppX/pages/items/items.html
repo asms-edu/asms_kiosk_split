@@ -18,7 +18,7 @@
     <!-- This template is used to display each item in the ListView declared below. -->
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
-            <img src="http://placehold.it/500x500" />
+            <img data-win-bind="src: backgroundImage" />
             <div class="item-overlay">
                 <h4 class="item-title" data-win-bind="textContent: title"></h4>
                 <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: updated"></h6>
