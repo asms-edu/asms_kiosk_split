@@ -9,21 +9,21 @@
             url: "http://asms.sa.edu.au/feed/",
             title: "Latest ASMS News", updated: "tbd",
             acquireSyndication: acquireSyndication, dataPromise: null,
-            backgroundImage: "/images/illustration/spacewoman.tif"
+            thumbnailImage: "/images/illustration/spacewoman.tif"
         },
         {
             key: "asmsEvents",
             url: 'http://asms.sa.edu.au/events/event/feed/',
             title: 'Upcoming ASMS Events', updated: 'tbd',
             acquireSyndication: acquireSyndication, dataPromise: null,
-            backgroundImage: "/images/illustration/diver.tif"
+            thumbnailImage: "/images/illustration/diver.tif"
         },
         {
             key: "asmsPD",
             url: "http://online.asms.sa.edu.au/feed/",
             title: "ASMS Professional Learning Blog", updated: 'tbd',
             acquireSyndication: acquireSyndication, dataPromise: null,
-            backgroundImage: "/images/illustration/solder.tif"
+            thumbnailImage: "/images/illustration/solder.tif"
         }
     ];
 
@@ -120,20 +120,26 @@
             var blogPostDay = dayFmt.format(postDate);
             var blogPostYear = yearFmt.format(postDate);
             var blogPostDate = blogPostDay + " " + blogPostMonth + " " + blogPostYear;
-            var blogPostImage = null; //post.querySelector("description").querySelector("img")
-            //process content so it displays nicely
+            // var blogPostImage is declared lower in the page and gets a thumbnail from the RSS
+
+            // Process content so it displays nicely
             var staticContent = toStaticHTML(post.querySelector("encoded").textContent);
-            //console.log(post.querySelector("description").query("attachment-thumbnail", "img"));
-            //if no image give placeholder
-            if (blogPostImage === undefined || blogPostImage === null) {
+
+            // We get the textcontent from the description tag in the RSS feed
+            var staticDesc = toStaticHTML(post.querySelector("description").textContent);
+
+            // Create a new div element to store our textContent HTML in. If we don't use this we can't access the img tag.
+            var containerDiv = document.createElement('div');
+            containerDiv.innerHTML = toStaticHTML(post.querySelector("description").textContent);
+
+            // If there is an img tag we get the first one (WP Plugin will store the thumbnail image as the first element/img tag)
+            if (containerDiv.getElementsByTagName("img")[0] !== undefined) {
+                // Make blogPostImage the src attribute of the first img element. We only need the src attribute because of data binding in the split.html file.
+                var blogPostImage = containerDiv.getElementsByTagName("img")[0].getAttribute('src');
+            } else {
                 var blogPostImage = "/images/asms-logo.png";
             }
 
-            var desc = post.querySelector("description");
-            var staticDesc = toStaticHTML(post.querySelector("description").textContent);
-            var re = /<img/;
-            var result = re.exec(staticDesc);
-            console.log(document.getElementsByTagName("img")[0].getAttribute("src"));
             // Store post info we care about in the array
             bPosts.push({
                 group: feed,
@@ -141,7 +147,7 @@
                 title: postTitle,
                 author: postAuthor,
                 date: blogPostDate,
-                backgroundImage: blogPostImage,
+                thumbnailImage: blogPostImage,
                 content: staticContent
             });
         }
@@ -210,13 +216,13 @@
                 key: "maps", 
                 title: "Maps of the ASMS buildings",  
                 updated: "Last updated: 18 September 2013",
-                backgroundImage: "/images/illustration/chemcity.tif",
+                thumbnailImage: "/images/illustration/chemcity.tif",
             },
             {
                 key: "webLinks",
                 title: "Links for the ASMS",
                 updated: "Last updated: 18 September 2013",
-                backgroundImage: "/images/illustration/robotics.tif"
+                thumbnailImage: "/images/illustration/robotics.tif"
             },
         ];
         var staticItems = [
@@ -226,7 +232,7 @@
                 author: "An annotated map of the ASMS ground floor",
                 date: "18 Sep 2013",
                 content: "<img src='/images/groundmap.png' />",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             },
             {
                 group: staticGroups[0],
@@ -234,7 +240,7 @@
                 author: "An annotated map of the ASMS first floor",
                 date: "18 Sep 2013",
                 content: "<img src='/images/firstmap.png' />",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             },
             {
                 group: staticGroups[0],
@@ -242,7 +248,7 @@
                 author: "A map of the Sturt buildings",
                 date: "18 Sep 2013",
                 content: "<img src='/images/sturtmap.png' />",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             },
             {
                 group: staticGroups[1],
@@ -250,7 +256,7 @@
                 author: "Australian Science and Mathematics School",
                 date: "18 Sep 2013",
                 content: "<a href='http://www.asms.sa.edu.au'>Follow this link to the public website</a>",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             },
             {
                 group: staticGroups[1],
@@ -258,7 +264,7 @@
                 author: "Australian Science and Mathematics School",
                 date: "18 Sep 2013",
                 content: "<a href='http://portal.asms.sa.edu.au'>Follow this link to the Portal</a>",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             },
             {
                 group: staticGroups[1],
@@ -266,7 +272,7 @@
                 author: "Access your timetable",
                 date: "18 Sep 2013",
                 content: "<a href='http://portal.asms.sa.edu.au/timetabler'>Follow this link to your timetable</a>",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             },
         ];
 
@@ -291,7 +297,7 @@
                     author: "nerd",
                     date: "datedate",
                     content: "<img src='" + "item.path" + "' />",
-                    backgroundImage: thumbnailImage
+                    thumbnailImage: thumbnailImage
                 });
             })
         } else {
@@ -301,7 +307,7 @@
                 author: "No data",
                 date: "No data",
                 content: "No data available",
-                backgroundImage: thumbnailImage
+                thumbnailImage: thumbnailImage
             });
         }
         return galleryItems;
