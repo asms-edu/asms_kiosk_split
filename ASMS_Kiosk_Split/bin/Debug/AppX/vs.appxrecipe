@@ -102,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-10-28T00:52:25.679</Modified>
+      <Modified>2013-10-28T01:03:13.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -134,7 +134,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
-      <Modified>2013-10-28T00:47:22.631</Modified>
+      <Modified>2013-10-28T02:05:55.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\default.html">
       <PackagePath>default.html</PackagePath>

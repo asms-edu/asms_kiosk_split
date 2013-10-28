@@ -137,6 +137,7 @@
                 // Make blogPostImage the src attribute of the first img element. We only need the src attribute because of data binding in the split.html file.
                 var blogPostImage = containerDiv.getElementsByTagName("img")[0].getAttribute('src');
             } else {
+                // If post thumbnail is not set we replace it with a picture of the ASMS logo.
                 var blogPostImage = "/images/asms-logo.png";
             }
 
@@ -266,19 +267,12 @@
                 content: "<a href='http://portal.asms.sa.edu.au'>Follow this link to the Portal</a>",
                 thumbnailImage: thumbnailImage
             },
-            {
-                group: staticGroups[1],
-                title: "Timetabler",
-                author: "Access your timetable",
-                date: "18 Sep 2013",
-                content: "<a href='http://portal.asms.sa.edu.au/timetabler'>Follow this link to your timetable</a>",
-                thumbnailImage: thumbnailImage
-            },
         ];
 
         return staticItems;
     }
 
+    // This function is not currently used because I can't figure out how to organize galleries. #BlizzardSoon
     function generateGalleryData(pathList, pathArray) {
         var galleryItems = [];
         var thumbnailImage = "http://placehold.it/150x150";
