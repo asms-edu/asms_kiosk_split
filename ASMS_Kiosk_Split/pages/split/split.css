@@ -281,3 +281,10 @@
             visibility: visible;
         }
 }
+
+.faq-slide h2 {
+    margin: 35px 0 0;
+}
+    .faq-slide h2.first {
+        margin-top: 20px;
+    }

@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-10-18T01:55:42.424</Modified>
+      <Modified>2013-10-30T23:20:58.548</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -26,7 +26,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\items\items.css">
       <PackagePath>pages\items\items.css</PackagePath>
-      <Modified>2013-10-16T01:10:22.456</Modified>
+      <Modified>2013-10-29T23:03:23.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\itemDetail\itemDetail.css">
       <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
@@ -34,47 +34,67 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.css">
       <PackagePath>pages\split\split.css</PackagePath>
-      <Modified>2013-09-13T02:47:30.148</Modified>
+      <Modified>2013-10-30T00:17:15.223</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\asms-logo-large.png">
-      <PackagePath>images\asms-logo-large.png</PackagePath>
-      <Modified>2013-10-17T02:41:35.772</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\aviation.jpg">
+      <PackagePath>images\thumbnails\aviation.jpg</PackagePath>
+      <Modified>2013-10-30T04:34:30.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\firstmap.png">
-      <PackagePath>images\firstmap.png</PackagePath>
-      <Modified>2013-09-13T00:10:34.644</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\computer_explain.jpg">
+      <PackagePath>images\thumbnails\computer_explain.jpg</PackagePath>
+      <Modified>2013-10-30T22:46:20.089</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\groundmap.png">
-      <PackagePath>images\groundmap.png</PackagePath>
-      <Modified>2013-10-17T02:51:11.883</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\computer_pair.jpg">
+      <PackagePath>images\thumbnails\computer_pair.jpg</PackagePath>
+      <Modified>2013-10-30T04:36:30.232</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\asms-logo.png">
-      <PackagePath>images\asms-logo.png</PackagePath>
-      <Modified>2013-10-17T01:44:46.964</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\food.jpg">
+      <PackagePath>images\thumbnails\food.jpg</PackagePath>
+      <Modified>2013-10-30T04:28:01.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\sturtmap.png">
-      <PackagePath>images\sturtmap.png</PackagePath>
-      <Modified>2013-09-13T00:16:04.414</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\lab_coats.JPG">
+      <PackagePath>images\thumbnails\lab_coats.JPG</PackagePath>
+      <Modified>2013-10-30T23:20:35.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logo.png">
-      <PackagePath>images\logo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-27T15:55:26.000</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\nano_expo.jpg">
+      <PackagePath>images\thumbnails\nano_expo.jpg</PackagePath>
+      <Modified>2013-10-30T04:58:50.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\smalllogo.png">
-      <PackagePath>images\smalllogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-27T15:55:26.000</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\soldering.jpg">
+      <PackagePath>images\thumbnails\soldering.jpg</PackagePath>
+      <Modified>2013-10-30T04:39:53.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\splashscreen.png">
-      <PackagePath>images\splashscreen.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-27T15:55:26.000</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\spi_board.JPG">
+      <PackagePath>images\thumbnails\spi_board.JPG</PackagePath>
+      <Modified>2013-10-30T23:04:22.293</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\storelogo.png">
-      <PackagePath>images\storelogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-27T15:55:26.000</Modified>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\spi_speaker.JPG">
+      <PackagePath>images\thumbnails\spi_speaker.JPG</PackagePath>
+      <Modified>2013-10-30T23:14:26.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\thumbnail1.jpg">
+      <PackagePath>images\thumbnails\thumbnail1.jpg</PackagePath>
+      <Modified>2013-10-29T03:18:13.549</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\thumbnail3.jpg">
+      <PackagePath>images\thumbnails\thumbnail3.jpg</PackagePath>
+      <Modified>2013-10-29T03:33:56.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\thumbnail4.jpg">
+      <PackagePath>images\thumbnails\thumbnail4.jpg</PackagePath>
+      <Modified>2013-10-29T03:35:17.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\thumbnail5.jpg">
+      <PackagePath>images\thumbnails\thumbnail5.jpg</PackagePath>
+      <Modified>2013-10-29T03:37:12.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\thumbnail6.jpg">
+      <PackagePath>images\thumbnails\thumbnail6.jpg</PackagePath>
+      <Modified>2013-10-29T03:42:35.691</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\thumbnails\thumbnail7.jpg">
+      <PackagePath>images\thumbnails\thumbnail7.jpg</PackagePath>
+      <Modified>2013-10-29T03:46:23.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\illustration\solder.tif">
       <PackagePath>images\illustration\solder.tif</PackagePath>
@@ -100,9 +120,46 @@
       <PackagePath>images\illustration\spacewoman.tif</PackagePath>
       <Modified>2013-10-17T03:25:21.290</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logos\asms-logo-large.png">
+      <PackagePath>images\logos\asms-logo-large.png</PackagePath>
+      <Modified>2013-10-17T02:41:35.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logos\asms-logo.png">
+      <PackagePath>images\logos\asms-logo.png</PackagePath>
+      <Modified>2013-10-17T01:44:46.964</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logos\logo.png">
+      <PackagePath>images\logos\logo.png</PackagePath>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logos\smalllogo.png">
+      <PackagePath>images\logos\smalllogo.png</PackagePath>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\logos\storelogo.png">
+      <PackagePath>images\logos\storelogo.png</PackagePath>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\maps\firstmap.png">
+      <PackagePath>images\maps\firstmap.png</PackagePath>
+      <Modified>2013-09-13T00:10:34.644</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\maps\groundmap.png">
+      <PackagePath>images\maps\groundmap.png</PackagePath>
+      <Modified>2013-10-17T02:51:11.883</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\maps\sturtmap.png">
+      <PackagePath>images\maps\sturtmap.png</PackagePath>
+      <Modified>2013-09-13T00:16:04.414</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-27T15:55:26.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2013-10-28T01:03:13.189</Modified>
+      <Modified>2013-10-30T23:20:56.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -126,7 +183,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
-      <Modified>2013-10-28T00:45:09.709</Modified>
+      <Modified>2013-10-29T00:50:32.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
@@ -134,7 +191,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\pages\split\split.html">
       <PackagePath>pages\split\split.html</PackagePath>
-      <Modified>2013-10-28T02:05:55.676</Modified>
+      <Modified>2013-10-29T00:50:28.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\default.html">
       <PackagePath>default.html</PackagePath>
@@ -142,7 +199,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hayd0032\VSApps\ASMS_Kiosk_Split\ASMS_Kiosk_Split\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-10-18T01:55:42.306</Modified>
+      <Modified>2013-10-30T23:20:58.491</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
